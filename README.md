@@ -49,12 +49,14 @@ add gulp watch:
 `dgulp-watch`
 
 
-**To be able to run protractor **
+**To be able to run protractor**
+
+
 `cd dockervel` 
 
 `dpermit`
 
-`cd dockervel/www/e2e_test`
+`cd www/e2e_test`
 
 
 `sudo su`
@@ -62,5 +64,10 @@ add gulp watch:
 
 `docker pull webnicer/protractor-headless`
 
+`cd dockervel` 
+
+`dpermit`
+
+`cd www/e2e_test`
 
 `docker run -it --privileged --rm --net=host -v /dev/shm:/dev/shm -v $(pwd):/protractor webnicer/protractor-headless conf.js`
