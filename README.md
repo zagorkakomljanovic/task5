@@ -54,14 +54,13 @@ add gulp watch:
 
 `dpermit`
 
-`cd dockervel/www/e2e_test
+`cd dockervel/www/e2e_test`
 
 
-sudo su
+`sudo su`
 
 
-docker pull webnicer/protractor-headless
+`docker pull webnicer/protractor-headless`
 
 
-docker run -it --privileged --rm --net=host -v /dev/shm:/dev/shm -v $(pwd):/protractor webnicer/protractor-headless conf.js
-`
+`docker run -it --privileged --rm --net=host -v /dev/shm:/dev/shm -v $(pwd):/protractor webnicer/protractor-headless conf.js`
